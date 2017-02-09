@@ -1,9 +1,15 @@
 #include <hmg.ch>
-   
+
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 // *************************************************************************************
 // FUNCOES ESPECIAIS PARA DINAMIZAR
 // CATS_<function>
-// Céu Azul Tecnologia e Software
+// CÃ©u Azul Tecnologia e Software
 //    
 
 // *************************************************************************************
