@@ -1,0 +1,349 @@
+* HMG-IDE Form Designer Generated Code
+* (c) Roberto Lopez - http://sites.google.com/site/hmgweb
+
+DEFINE WINDOW TEMPLATE AT 140 , 339 WIDTH 547 HEIGHT 507 VIRTUAL WIDTH Nil VIRTUAL HEIGHT Nil TITLE "Manutenção de preços" ICON NIL  NOMAXIMIZE NOSIZE CURSOR NIL ON INIT manutencao_precos_form_oninit() ON RELEASE Nil ON INTERACTIVECLOSE Nil ON MOUSECLICK Nil ON MOUSEDRAG Nil ON MOUSEMOVE Nil ON SIZE Nil ON MAXIMIZE Nil ON MINIMIZE Nil ON PAINT Nil BACKCOLOR Nil NOTIFYICON NIL NOTIFYTOOLTIP NIL ON NOTIFYCLICK Nil ON GOTFOCUS Nil ON LOSTFOCUS Nil ON SCROLLUP Nil ON SCROLLDOWN Nil ON SCROLLLEFT Nil ON SCROLLRIGHT Nil ON HSCROLLBOX Nil ON VSCROLLBOX Nil
+
+    DEFINE STATUSBAR FONT "Arial" SIZE 9
+        STATUSITEM "Preços"
+    END STATUSBAR
+
+    DEFINE GRID Grid_data
+        ROW    70
+        COL    10
+        WIDTH  510
+        HEIGHT 210
+        ITEMS { {""} }
+        VALUE Nil
+        WIDTHS { 0 }
+        HEADERS {''}
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        ONCHANGE manutencao_precos_grid_data_onchange()
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONDBLCLICK manutencao_precos_grid_data_ondblclick()
+        ONHEADCLICK Nil
+        ONQUERYDATA Nil
+        MULTISELECT .F.
+        ALLOWEDIT .F.
+        VIRTUAL .F.
+        DYNAMICBACKCOLOR Nil
+        DYNAMICFORECOLOR Nil
+        COLUMNWHEN Nil
+        COLUMNVALID Nil
+        COLUMNCONTROLS Nil
+        SHOWHEADERS .T.
+        CELLNAVIGATION .F.
+        NOLINES .F.
+        HELPID Nil
+        IMAGE Nil
+        JUSTIFY Nil
+        ITEMCOUNT Nil
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        HEADERIMAGES Nil
+        ROWSOURCE Nil
+        COLUMNFIELDS Nil
+        ALLOWAPPEND .F.
+        ALLOWDELETE .F.
+        BUFFERED .F.
+        DYNAMICDISPLAY Nil
+        ONSAVE Nil
+        LOCKCOLUMNS 0
+    END GRID
+
+    DEFINE FRAME Frame_1
+        ROW    10
+        COL    10
+        WIDTH  510
+        HEIGHT 50
+        FONTNAME "Arial"
+        FONTSIZE 9
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        CAPTION "Busca"
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        OPAQUE .T.
+    END FRAME
+
+    DEFINE TEXTBOX Text_busca
+        ROW    30
+        COL    20
+        WIDTH  330
+        HEIGHT 20
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        ONCHANGE manutencao_precos_text_busca_onchange()
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONENTER Nil
+        HELPID Nil
+        TABSTOP .T.
+        VISIBLE .T.
+        READONLY .F.
+        RIGHTALIGN .F.
+        DISABLEDBACKCOLOR Nil
+        DISABLEDFONTCOLOR Nil
+        CASECONVERT NONE
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        INPUTMASK Nil
+        FORMAT Nil
+        VALUE ""
+    END TEXTBOX
+
+    DEFINE BUTTON Button_busca
+        ROW    30
+        COL    450
+        WIDTH  60
+        HEIGHT 20
+        ACTION manutencao_precos_button_busca_action()
+        CAPTION "busca"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        HELPID Nil
+        FLAT .F.
+        TABSTOP .T.
+        VISIBLE .T.
+        TRANSPARENT .F.
+        MULTILINE .F.
+        PICTURE Nil
+        PICTALIGNMENT TOP
+    END BUTTON
+
+    DEFINE SPINNER Spinner_registros
+        ROW    30
+        COL    360
+        WIDTH  80
+        HEIGHT 20
+        RANGEMIN 1
+        RANGEMAX 100
+        VALUE 30
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        ONCHANGE Nil
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        HELPID Nil
+        TABSTOP .T.
+        VISIBLE .T.
+        WRAP .F.
+        READONLY .F.
+        INCREMENT 1
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+    END SPINNER
+
+    DEFINE FRAME Frame_2
+        ROW    370
+        COL    20
+        WIDTH  280
+        HEIGHT 50
+        FONTNAME "Arial"
+        FONTSIZE 9
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        CAPTION "Preço"
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        OPAQUE .T.
+    END FRAME
+
+    DEFINE LABEL Label_preco
+        ROW    340
+        COL    20
+        WIDTH  120
+        HEIGHT 20
+        VALUE "0,00"
+        FONTNAME "Arial"
+        FONTSIZE 10
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        HELPID Nil
+        VISIBLE .T.
+        TRANSPARENT .F.
+        ACTION Nil
+        AUTOSIZE .F.
+        BACKCOLOR {0,0,0}
+        FONTCOLOR {0,255,255}
+        CENTERALIGN .T. 
+    END LABEL
+
+    DEFINE TEXTBOX Text_preco
+        ROW    390
+        COL    30
+        WIDTH  120
+        HEIGHT 24
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        ONCHANGE Nil
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONENTER Nil
+        HELPID Nil
+        TABSTOP .T.
+        VISIBLE .T.
+        READONLY .F.
+        RIGHTALIGN .T.
+        DISABLEDBACKCOLOR Nil
+        DISABLEDFONTCOLOR Nil
+        CASECONVERT NONE
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        INPUTMASK Nil
+        FORMAT Nil
+        NUMERIC .T. 
+        VALUE 0
+    END TEXTBOX
+
+    DEFINE BUTTON Button_salva
+        ROW    390
+        COL    160
+        WIDTH  60
+        HEIGHT 20
+        ACTION manutencao_precos_button_salva_action()
+        CAPTION "salva"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        HELPID Nil
+        FLAT .F.
+        TABSTOP .T.
+        VISIBLE .T.
+        TRANSPARENT .F.
+        MULTILINE .F.
+        PICTURE Nil
+        PICTALIGNMENT TOP
+    END BUTTON
+
+    DEFINE BUTTON Button_ignora
+        ROW    390
+        COL    230
+        WIDTH  60
+        HEIGHT 20
+        ACTION manutencao_precos_button_ignora_action()
+        CAPTION "ignora"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        HELPID Nil
+        FLAT .F.
+        TABSTOP .T.
+        VISIBLE .T.
+        TRANSPARENT .F.
+        MULTILINE .F.
+        PICTURE Nil
+        PICTALIGNMENT TOP
+    END BUTTON
+
+    DEFINE LABEL Label_produto
+        ROW    310
+        COL    20
+        WIDTH  490
+        HEIGHT 20
+        VALUE "Label_produto"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        HELPID Nil
+        VISIBLE .T.
+        TRANSPARENT .F.
+        ACTION Nil
+        AUTOSIZE .F.
+        BACKCOLOR {0,0,0}
+        FONTCOLOR {0,255,255}
+    END LABEL
+
+    DEFINE FRAME Frame_3
+        ROW    290
+        COL    10
+        WIDTH  510
+        HEIGHT 140
+        FONTNAME "Arial"
+        FONTSIZE 9
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        CAPTION "Produto"
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        OPAQUE .T.
+    END FRAME
+
+    DEFINE LABEL Label_codigo
+        ROW    340
+        COL    390
+        WIDTH  120
+        HEIGHT 24
+        VALUE "Label_codigo"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        HELPID Nil
+        VISIBLE .T.
+        TRANSPARENT .F.
+        ACTION Nil
+        AUTOSIZE .F.
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        RIGHTALIGN .T. 
+    END LABEL
+
+END WINDOW
+

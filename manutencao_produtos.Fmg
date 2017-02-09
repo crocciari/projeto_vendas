@@ -1,0 +1,241 @@
+* HMG-IDE Form Designer Generated Code
+* (c) Roberto Lopez - http://sites.google.com/site/hmgweb
+
+DEFINE WINDOW TEMPLATE AT 173 , 372 WIDTH 557 HEIGHT 372 VIRTUAL WIDTH Nil VIRTUAL HEIGHT Nil TITLE "Manutenção de produtos" ICON NIL  NOMAXIMIZE NOSIZE CURSOR NIL ON INIT manutencao_produtos_form_oninit() ON RELEASE Nil ON INTERACTIVECLOSE Nil ON MOUSECLICK Nil ON MOUSEDRAG Nil ON MOUSEMOVE Nil ON SIZE Nil ON MAXIMIZE Nil ON MINIMIZE Nil ON PAINT Nil BACKCOLOR Nil NOTIFYICON NIL NOTIFYTOOLTIP NIL ON NOTIFYCLICK Nil ON GOTFOCUS Nil ON LOSTFOCUS Nil ON SCROLLUP Nil ON SCROLLDOWN Nil ON SCROLLLEFT Nil ON SCROLLRIGHT Nil ON HSCROLLBOX Nil ON VSCROLLBOX Nil
+
+    DEFINE STATUSBAR FONT "Arial" SIZE 9
+        STATUSITEM "Manutenção de produtos"
+    END STATUSBAR
+
+    DEFINE FRAME Frame_1
+        ROW    10
+        COL    10
+        WIDTH  520
+        HEIGHT 50
+        FONTNAME "Arial"
+        FONTSIZE 9
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        CAPTION "Busca"
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        OPAQUE .T.
+    END FRAME
+
+    DEFINE TEXTBOX Text_busca
+        ROW    30
+        COL    20
+        WIDTH  310
+        HEIGHT 20
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        ONCHANGE Nil
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONENTER manutencao_produtos_text_busca_onenter()
+        HELPID Nil
+        TABSTOP .T.
+        VISIBLE .T.
+        READONLY .F.
+        RIGHTALIGN .F.
+        DISABLEDBACKCOLOR Nil
+        DISABLEDFONTCOLOR Nil
+        CASECONVERT NONE
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        INPUTMASK Nil
+        FORMAT Nil
+        VALUE ""
+    END TEXTBOX
+
+    DEFINE BUTTON Button_busca
+        ROW    30
+        COL    420
+        WIDTH  100
+        HEIGHT 20
+        ACTION manutencao_produtos_button_busca_action()
+        CAPTION "busca"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        HELPID Nil
+        FLAT .F.
+        TABSTOP .T.
+        VISIBLE .T.
+        TRANSPARENT .F.
+        MULTILINE .F.
+        PICTURE Nil
+        PICTALIGNMENT TOP
+    END BUTTON
+
+    DEFINE GRID Grid_data
+        ROW    70
+        COL    10
+        WIDTH  520
+        HEIGHT 190
+        ITEMS { {""} }
+        VALUE Nil
+        WIDTHS { 0 }
+        HEADERS {''}
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        ONCHANGE Nil
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONDBLCLICK manutencao_produtos_grid_data_ondblclick()
+        ONHEADCLICK Nil
+        ONQUERYDATA Nil
+        MULTISELECT .F.
+        ALLOWEDIT .F.
+        VIRTUAL .F.
+        DYNAMICBACKCOLOR Nil
+        DYNAMICFORECOLOR Nil
+        COLUMNWHEN Nil
+        COLUMNVALID Nil
+        COLUMNCONTROLS Nil
+        SHOWHEADERS .T.
+        CELLNAVIGATION .F.
+        NOLINES .F.
+        HELPID Nil
+        IMAGE Nil
+        JUSTIFY Nil
+        ITEMCOUNT Nil
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+        HEADERIMAGES Nil
+        ROWSOURCE Nil
+        COLUMNFIELDS Nil
+        ALLOWAPPEND .F.
+        ALLOWDELETE .F.
+        BUFFERED .F.
+        DYNAMICDISPLAY Nil
+        ONSAVE Nil
+        LOCKCOLUMNS 0
+    END GRID
+
+    DEFINE BUTTON Button_incluir
+        ROW    270
+        COL    10
+        WIDTH  100
+        HEIGHT 28
+        ACTION manutencao_produtos_button_incluir_action()
+        CAPTION "Incluir"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        HELPID Nil
+        FLAT .F.
+        TABSTOP .T.
+        VISIBLE .T.
+        TRANSPARENT .F.
+        MULTILINE .F.
+        PICTURE Nil
+        PICTALIGNMENT TOP
+    END BUTTON
+
+    DEFINE BUTTON Button_alterar
+        ROW    270
+        COL    120
+        WIDTH  100
+        HEIGHT 28
+        ACTION manutencao_produtos_button_alterar_action()
+        CAPTION "Alterar"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        HELPID Nil
+        FLAT .F.
+        TABSTOP .T.
+        VISIBLE .T.
+        TRANSPARENT .F.
+        MULTILINE .F.
+        PICTURE Nil
+        PICTALIGNMENT TOP
+    END BUTTON
+
+    DEFINE BUTTON Button_excluir
+        ROW    270
+        COL    430
+        WIDTH  100
+        HEIGHT 28
+        ACTION manutencao_produtos_button_excluir_action()
+        CAPTION "Excluir"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        HELPID Nil
+        FLAT .F.
+        TABSTOP .T.
+        VISIBLE .T.
+        TRANSPARENT .F.
+        MULTILINE .F.
+        PICTURE Nil
+        PICTALIGNMENT TOP
+    END BUTTON
+
+    DEFINE SPINNER Spinner_registros
+        ROW    30
+        COL    340
+        WIDTH  70
+        HEIGHT 20
+        RANGEMIN 1
+        RANGEMAX 1000
+        VALUE 30
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        ONCHANGE Nil
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        HELPID Nil
+        TABSTOP .T.
+        VISIBLE .T.
+        WRAP .F.
+        READONLY .F.
+        INCREMENT 1
+        BACKCOLOR NIL
+        FONTCOLOR NIL
+    END SPINNER
+
+END WINDOW
+

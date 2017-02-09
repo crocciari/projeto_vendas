@@ -1,0 +1,31 @@
+aEstado := {"AC-Acre","AL-Alagoas","AP-Amapá","AM-Amazonas","BA-Bahia","CE-Ceará","DF-Distrito Federal","ES-Espírito Santo","GO-Goiás","MA-Maranhão","MT-Mato Grosso","MS-Mato Grosso do Sul","MG-Minas Gerais","PR-Paraná","PB-Paraíba","PA-Pará","PE-Pernambuco","PI-Piauí","RJ-Rio de Janeiro","RN-Rio Grande do Norte","RS-Rio Grande do Sul","RO-Rondonia","SC-Santa Catarina","SE-Sergipe","SP-São Paulo","TO-Tocantins" }
+   
+
+
+   aEstado := {}
+   AADD( aEstado,"AC-Acre" )
+   AADD( aEstado,"AL-Alagoas" )
+   AADD( aEstado,"AP-Amapá" )
+   AADD( aEstado,"AM-Amazonas" )
+   AADD( aEstado,"BA-Bahia" )
+   AADD( aEstado,"CE-Ceará" )
+   AADD( aEstado,"DF-Distrito Federal" )
+   AADD( aEstado,"ES-Espírito Santo" )
+   AADD( aEstado,"GO-Goiás" )
+   AADD( aEstado,"MA-Maranhão" )
+   AADD( aEstado,"MT-Mato Grosso" )
+   AADD( aEstado,"MS-Mato Grosso do Sul" )
+   AADD( aEstado,"MG-Minas Gerais" )
+   AADD( aEstado,"PR-Paraná" )
+   AADD( aEstado,"PB-Paraíba" )
+   AADD( aEstado,"PA-Pará" )
+   AADD( aEstado,"PE-Pernambuco" )
+   AADD( aEstado,"PI-Piauí" )
+   AADD( aEstado,"RJ-Rio de Janeiro" )
+   AADD( aEstado,"RN-Rio Grande do Norte" )
+   AADD( aEstado,"RS-Rio Grande do Sul" )
+   AADD( aEstado,"RO-Rondonia" )
+   AADD( aEstado,"SC-Santa Catarina" )
+   AADD( aEstado,"SE-Sergipe" )
+   AADD( aEstado,"SP-São Paulo" )
+   AADD( aEstado,"TO-Tocantins" )
