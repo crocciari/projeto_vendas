@@ -1,5 +1,11 @@
 #include <hmg.ch>
 
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 DECLARE WINDOW manutencao_precos
 
 FUNCTION show_manutencao_precos()
