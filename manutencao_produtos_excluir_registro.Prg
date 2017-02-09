@@ -1,11 +1,17 @@
 #include <hmg.ch>
 
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 function manutencao_produtos_excluir_registro(cCodigo)
 
    bRetorno := .f.
    
    IF(cCodigo=="")
-      MSGSTOP("Não posso remover um registro inexistente")
+      MSGSTOP("NÃ£o posso remover um registro inexistente")
       RETURN bRetorno
    ENDIF
 
@@ -25,7 +31,7 @@ function manutencao_produtos_excluir_registro(cCodigo)
 					
 				ELSE
 				
-					MSGSTOP("Não posso remover o registro [" + cCodigo + "]!");
+					MSGSTOP("NÃ£o posso remover o registro [" + cCodigo + "]!");
 		
 				ENDIF
 				
@@ -37,7 +43,7 @@ function manutencao_produtos_excluir_registro(cCodigo)
 	
 	ELSE
 	
-		MSGSTOP("Não posso remover esse registro [" + cCodigo + "]")
+		MSGSTOP("NÃ£o posso remover esse registro [" + cCodigo + "]")
 	
 	ENDIF
 
