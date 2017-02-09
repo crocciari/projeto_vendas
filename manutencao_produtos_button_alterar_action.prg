@@ -1,5 +1,11 @@
 #include "hmg.ch"
 
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 declare window manutencao_produtos
 
 Function manutencao_produtos_button_alterar_action
@@ -32,7 +38,7 @@ Function manutencao_produtos_button_alterar_action
       IF(LEN(paTemp)>0)
          show_manutencao_produtos_formulario()
       ELSE
-         MSGSTOP("Impossível editar este registro!")
+         MSGSTOP("ImpossÃ­vel editar este registro!")
       ENDIF
       
    ENDIF
