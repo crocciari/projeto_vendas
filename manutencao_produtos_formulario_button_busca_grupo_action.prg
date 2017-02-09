@@ -2,6 +2,12 @@
 
 declare window manutencao_produtos_formulario
 
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 Function manutencao_produtos_formulario_button_busca_grupo_action
 
    show_consulta_grupos()
