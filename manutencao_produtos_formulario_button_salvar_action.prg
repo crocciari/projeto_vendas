@@ -1,5 +1,11 @@
 #include "hmg.ch"
 
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 declare window manutencao_produtos_formulario
 
 Function manutencao_produtos_formulario_button_salvar_action
@@ -48,7 +54,7 @@ Function manutencao_produtos_formulario_button_salvar_action
       IF MySQL_Database_Connect()
          
          IF(!MySQL_exec(oServer,cQuery))
-            MSGSTOP("Não Posso salvar o registro!")
+            MSGSTOP("NÃ£o Posso salvar o registro!")
             RETURN nil
          ENDIF
          
