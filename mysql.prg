@@ -107,7 +107,7 @@ FUNCTION MySQL_execQuery(oServer,cQuery)
 LOCAL oQuery, oRow, i, j, aTable := {}, aRow := {}
 
 	IF( oServer == nil )
-		MSGSTOP("Erro: sem conexão com o servidor!","SQL")
+		MSGSTOP("Erro: sem conexão com o servidor! ","SQL")
 		return aTable
 	ENDIF
 
