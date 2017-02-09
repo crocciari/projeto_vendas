@@ -1,31 +1,37 @@
-aEstado := {"AC-Acre","AL-Alagoas","AP-Amap·","AM-Amazonas","BA-Bahia","CE-Cear·","DF-Distrito Federal","ES-EspÌrito Santo","GO-Goi·s","MA-Maranh„o","MT-Mato Grosso","MS-Mato Grosso do Sul","MG-Minas Gerais","PR-Paran·","PB-ParaÌba","PA-Par·","PE-Pernambuco","PI-PiauÌ","RJ-Rio de Janeiro","RN-Rio Grande do Norte","RS-Rio Grande do Sul","RO-Rondonia","SC-Santa Catarina","SE-Sergipe","SP-S„o Paulo","TO-Tocantins" }
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
+aEstado := {"AC-Acre","AL-Alagoas","AP-Amap√°","AM-Amazonas","BA-Bahia","CE-Cear√°","DF-Distrito Federal","ES-Esp√≠rito Santo","GO-Goi√°s","MA-Maranh√£o","MT-Mato Grosso","MS-Mato Grosso do Sul","MG-Minas Gerais","PR-Paran√°","PB-Para√≠ba","PA-Par√°","PE-Pernambuco","PI-Piau√≠","RJ-Rio de Janeiro","RN-Rio Grande do Norte","RS-Rio Grande do Sul","RO-Rondonia","SC-Santa Catarina","SE-Sergipe","SP-S√£o Paulo","TO-Tocantins" }
    
 
 
    aEstado := {}
    AADD( aEstado,"AC-Acre" )
    AADD( aEstado,"AL-Alagoas" )
-   AADD( aEstado,"AP-Amap·" )
+   AADD( aEstado,"AP-Amap√°" )
    AADD( aEstado,"AM-Amazonas" )
    AADD( aEstado,"BA-Bahia" )
-   AADD( aEstado,"CE-Cear·" )
+   AADD( aEstado,"CE-Cear√°" )
    AADD( aEstado,"DF-Distrito Federal" )
-   AADD( aEstado,"ES-EspÌrito Santo" )
-   AADD( aEstado,"GO-Goi·s" )
-   AADD( aEstado,"MA-Maranh„o" )
+   AADD( aEstado,"ES-Esp√≠rito Santo" )
+   AADD( aEstado,"GO-Goi√°s" )
+   AADD( aEstado,"MA-Maranh√£o" )
    AADD( aEstado,"MT-Mato Grosso" )
    AADD( aEstado,"MS-Mato Grosso do Sul" )
    AADD( aEstado,"MG-Minas Gerais" )
-   AADD( aEstado,"PR-Paran·" )
-   AADD( aEstado,"PB-ParaÌba" )
-   AADD( aEstado,"PA-Par·" )
+   AADD( aEstado,"PR-Paran√°" )
+   AADD( aEstado,"PB-Para√≠ba" )
+   AADD( aEstado,"PA-Par√°" )
    AADD( aEstado,"PE-Pernambuco" )
-   AADD( aEstado,"PI-PiauÌ" )
+   AADD( aEstado,"PI-Piau√≠" )
    AADD( aEstado,"RJ-Rio de Janeiro" )
    AADD( aEstado,"RN-Rio Grande do Norte" )
    AADD( aEstado,"RS-Rio Grande do Sul" )
    AADD( aEstado,"RO-Rondonia" )
    AADD( aEstado,"SC-Santa Catarina" )
    AADD( aEstado,"SE-Sergipe" )
-   AADD( aEstado,"SP-S„o Paulo" )
+   AADD( aEstado,"SP-S√£o Paulo" )
    AADD( aEstado,"TO-Tocantins" )
