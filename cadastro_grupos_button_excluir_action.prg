@@ -1,5 +1,11 @@
 #include "hmg.ch"
 
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 declare window cadastro_grupos
 
 Function cadastro_grupos_button_excluir_action
