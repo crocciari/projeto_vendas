@@ -1,10 +1,16 @@
 #include "hmg.ch"
 
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 declare window manutencao_produtos
 
 Function manutencao_produtos_form_oninit
 
-   aHeader := { "Código", "Produto", "Unidade", "Grupo", "Marca" }
+   aHeader := { "CÃ³digo", "Produto", "Unidade", "Grupo", "Marca" }
    aColumnsControl := { pacNi, pacC, pacC, pacC, pacC }
    aWidths := { 10, 10, 10, 10, 10 }
    aJustify := { GRID_JTFY_RIGHT, GRID_JTFY_LEFT, GRID_JTFY_CENTER, GRID_JTFY_CENTER, GRID_JTFY_CENTER }
