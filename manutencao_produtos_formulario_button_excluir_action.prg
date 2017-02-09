@@ -2,6 +2,12 @@
 
 declare window manutencao_produtos_formulario
 
+// ******************************************************************************
+// Crocciari, Daniel
+// hmglights.wordpress.com
+// danielcrocciari@gmail.com
+//
+
 Function manutencao_produtos_formulario_button_excluir_action
    
    cCodigo := GETPROPERTY("manutencao_produtos_formulario","text_codigo","value")
