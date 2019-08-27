@@ -16,6 +16,7 @@ Function manutencao_produtos_button_busca_action
    aTable := getProdutos(cBusca,nLimit)
    
    CATS_grid_add("manutencao_produtos", "grid_data", aTable)
+   
    CATS_grid_size_column("manutencao_produtos","grid_data")
 
    

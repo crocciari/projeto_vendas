@@ -87,14 +87,21 @@ RETURN bSucesso
 
 
 // *********************************************
-FUNCTION MySQL_exec(oServer,cQuery)
+FUNCTION MySQL_exec(oServer,cQuery,bSilence)
 LOCAL oQuery
 
 	oQuery := oServer:QUERY( cQuery )
 	
+	// retorna se eh true ou false na execucao mysql
 	IF( oQuery:NETERR() )
 	
-		MSGSTOP("Erro: " + oQuery:ERROR(), "SQL" )
+		IF bSilence
+			// modo silencio
+			// nao mostra mensagem de erro
+		ELSE
+			// retorna a mensagem de erro padrao do mysql
+			MSGSTOP("Erro: " + oQuery:ERROR(), "SQL" )
+		ENDIF
 		
 		RETURN .f.
 		

@@ -1,4 +1,4 @@
-* HMG-IDE Form Designer Generated Code
+* HMG-IDE UNICODE Form Designer Generated Code
 * (c) Roberto Lopez - http://sites.google.com/site/hmgweb
 
 DEFINE WINDOW TEMPLATE AT 259 , 437 WIDTH 547 HEIGHT 356 VIRTUAL WIDTH Nil VIRTUAL HEIGHT Nil TITLE "Projeto Vendas" ICON NIL MAIN NOMAXIMIZE NOSIZE CURSOR NIL ON INIT Nil ON RELEASE Nil ON INTERACTIVECLOSE Nil ON MOUSECLICK Nil ON MOUSEDRAG Nil ON MOUSEMOVE Nil ON SIZE Nil ON MAXIMIZE Nil ON MINIMIZE Nil ON PAINT Nil BACKCOLOR Nil NOTIFYICON NIL NOTIFYTOOLTIP NIL ON NOTIFYCLICK Nil ON GOTFOCUS Nil ON LOSTFOCUS Nil ON SCROLLUP Nil ON SCROLLDOWN Nil ON SCROLLLEFT Nil ON SCROLLRIGHT Nil ON HSCROLLBOX Nil ON VSCROLLBOX Nil
@@ -14,15 +14,17 @@ DEFINE WINDOW TEMPLATE AT 259 , 437 WIDTH 547 HEIGHT 356 VIRTUAL WIDTH Nil VIRTU
                 MENUITEM "Consulta" ACTION show_consulta_marcas()
             END POPUP
             DEFINE POPUP "Produtos"
-                MENUITEM "Manutenção" ACTION show_manutencao_produtos()
-                MENUITEM "Preços" ACTION  show_manutencao_precos()
+                MENUITEM "ManutenÃ§Ã£o" ACTION show_manutencao_produtos()
+                MENUITEM "PreÃ§os" ACTION show_manutencao_precos()
             END POPUP
             DEFINE POPUP "Cidades"
-                MENUITEM "Manutenção" ACTION show_manutencao_cidades()
+                MENUITEM "ManutenÃ§Ã£o" ACTION show_manutencao_cidades()
             END POPUP
         END POPUP
         DEFINE POPUP "Utilidades"
-            MENUITEM "Configurações" ACTION show_config()
+            MENUITEM "Criar Tabelas" ACTION show_criar_tabelas()
+            SEPARATOR
+            MENUITEM "ConfiguraÃ§Ãµes" ACTION show_config()
         END POPUP
     END MENU
 

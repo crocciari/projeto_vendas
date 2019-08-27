@@ -222,8 +222,8 @@ function CATS_grid_redefine(cForm, cComponent, aHeader, aColumnsControl, aWidths
       _HMG_SYSDATA [ 37 ] [ k ] := aJustify
       _HMG_SYSDATA [ 40 ] [ k ] [ 2] := aColumnsControl
 
-      _HMG_DOGRIDREFRESH(k)
-      
+      // _HMG_DOGRIDREFRESH(k)
+	  
    endif
    
 return nil

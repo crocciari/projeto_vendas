@@ -10,7 +10,7 @@ Function Main
 
 	public oServer := nil
 
-   public pcFileIni := GetProgramFilesFolder() + "\venda.ini"
+   public pcFileIni := GetCurrentFolder() + "\venda.ini"
 
    public pcHostName := ""
    public pcDataBase := ""

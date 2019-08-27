@@ -25,6 +25,8 @@ consulta_marcas_button_busca_action.prg
 consulta_marcas_form_oninit.prg
 consulta_marcas_grid_data_ondblclick.prg
 consulta_marcas_text_busca_onenter.prg
+criar_tabelas_button_criar_tabelas_action.prg
+cria_tabelas.Prg
 enche_combo_estado.Prg
 funcoes.prg
 getgrupos.prg
@@ -71,6 +73,7 @@ show_cadastro_marcas.prg
 show_config.prg
 show_consulta_grupos.prg
 show_consulta_marcas.prg
+show_criar_tabelas.Prg
 show_manutencao_cidades.prg
 show_manutencao_precos.Prg
 show_manutencao_produtos.prg

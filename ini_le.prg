@@ -10,7 +10,10 @@
 FUNCTION ini_le()
 
    IF( !FILE( pcFileIni ) )
-         ini_salva()
+   
+		msgStop("Criando: " + pcFileIni )
+        ini_salva()
+		
    ENDIF
    
    BEGIN INI FILE pcFileIni
